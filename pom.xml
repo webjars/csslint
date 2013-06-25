@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>csslint</artifactId>
-    <version>0.9.10-SNAPSHOT</version>
+    <version>0.9.10</version>
     <name>CSSLint</name>
     <description>WebJar for CSSLint</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/csslint</url>
         <connection>scm:git:https://github.com/webjars/csslint.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/csslint.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>csslint-0.9.10</tag>
     </scm>
     
     <properties>
@@ -80,7 +80,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/csslint-${upstream.version}/release" includes="*.js"/>
+                                    <fileset dir="${project.build.directory}/csslint-${upstream.version}/release" includes="*.js" />
                                 </move>
                             </target>
                         </configuration>
